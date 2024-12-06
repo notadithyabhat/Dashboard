@@ -6,7 +6,7 @@ st.title("EZ Training Dashboard")
 st.subheader("Welcome to the EZ Training Dashboard!")
 st.subheader("Meet the Team")
 team_members = {
-    "Adithya": {"link": "https://www.linkedin.com/in/adithyabhat7/", "img": "https://media-exp1.licdn.com/dms/image/C4E03AQH7U8dW7XpD9g/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
+    "Adithya": {"link": "https://www.linkedin.com/in/adithyabhat7/", "img": "https://media.licdn.com/dms/image/v2/D5603AQHviNaGneFvdQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721661966979?e=1738800000&v=beta&t=RohJzfJTevRshMEOxmyV_RpZWp---2esIbmz1dTcUcY"},
     "Emily": {"link": "https://www.linkedin.com/in/emily-qiqiu/", "img": "https://media-exp1.licdn.com/dms/image/C4D03AQG7h2QYVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
     "Zhao": {"link": "https://www.linkedin.com/in/shiyunyang-zhao/", "img": "https://media-exp1.licdn.com/dms/image/C4E03AQEJm3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
     "Gerson": {"link": "https://www.linkedin.com/in/gersonmoralesd/", "img": "https://media-exp1.licdn.com/dms/image/C4E03AQGZd3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
