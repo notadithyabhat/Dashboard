@@ -1,14 +1,10 @@
 import streamlit as st
 
-# Set the page layout and title
-st.set_page_config(page_title="EZ Training Dashboard", layout="wide")
+st.set_page_config(page_title="Home", layout="wide")
 
-# Main title and subheaders
-st.title("EZ Training Dashboard")
+st.title("EZ Training Dashboard") 
 st.subheader("Welcome to the EZ Training Dashboard!")
 st.subheader("Meet the Team")
-
-# Define team members
 team_members = {
     "Adithya": {
         "link": "https://www.linkedin.com/in/adithyabhat7/",
@@ -36,6 +32,9 @@ team_members = {
     },
 }
 
+# Title
+st.title("The EZ Training Dashboard Team")
+
 # Display instructions about the dashboard
 st.markdown("### Created by the following students:")
 
@@ -62,7 +61,7 @@ team_html += "</div>"
 st.markdown(team_html, unsafe_allow_html=True)
 
 # Display the sidebar instructions
-st.markdown("""
+st.sidebar.markdown("""
 Use the sidebar to navigate between pages:
 - **Top Nutritionists**: Your initial Top Nutritionists Dashboard
 - **Active Members**: Active Members' BMI Change and Workout Frequency Analysis
