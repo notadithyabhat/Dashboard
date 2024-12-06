@@ -12,20 +12,14 @@ load_dotenv()
 # ------------------------------
 # Database Connection
 # ------------------------------
-DB_USER = os.getenv("DB_USER", "your_username")      # Replace with your MySQL username
-DB_PASS = os.getenv("DB_PASS", "your_password")      # Replace with your MySQL password
-DB_HOST = "localhost"
-DB_PORT = 3306
-DB_NAME = "ieor215_project"
-
 # Create the database engine and test connection
 try:
     # Aiven server credentials
-    DB_USER = "avnadmin"
-    DB_PASS = "AVNS_SLETp6oSeDZPw-xBibq"
-    DB_HOST = "mysql-3ca3af72-ez-training.g.aivencloud.com"
-    DB_PORT = "20975"
-    DB_NAME = "ieor215_project"
+    DB_USER = os.getenv("DB_USER", "avnadmin")
+    DB_PASS = os.getenv("DB_PASS", "AVNS_SLETp6oSeDZPw-xBibq")
+    DB_HOST = os.getenv("DB_HOST", "mysql-3ca3af72-ez-training.g.aivencloud.com")
+    DB_PORT = os.getenv("DB_PORT", "20975")
+    DB_NAME = os.getenv("DB_NAME", "ieor215_project")
     SSL_CA_PATH = "ca.pem"  # Update this to the actual path of the CA certificate
 
     # Create the database engine with SSL enabled
