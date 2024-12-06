@@ -10,7 +10,6 @@ Welcome to the **EZ Training Dashboard**! This platform provides a comprehensive
 ### What You’ll Find Here
 - **Top Nutritionists Dashboard**: Discover the top-performing nutritionists based on metrics like client health improvement and engagement.
 - **Active Members Analysis**: Dive into detailed analytics on active members, including BMI trends, workout frequency, and overall progress.
-- **Team Insights**: Meet the team behind this project, explore their profiles, and connect with them via LinkedIn.
 
 ### Features
 - **Interactive Visualizations**: Easily filter and visualize data to uncover actionable insights.
@@ -52,6 +51,9 @@ team_members = {
 
 # Display team members in a horizontal layout
 cols = st.columns(len(team_members))
+
+# Add a divider before the team members
+st.write("---")
 
 for i, (name, details) in enumerate(team_members.items()):
     with cols[i]:
