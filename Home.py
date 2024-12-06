@@ -4,6 +4,13 @@ st.set_page_config(page_title="Home", layout="wide")
 
 st.title("EZ Training Dashboard") 
 st.subheader("Welcome to the EZ Training Dashboard!")
+
+st.markdown("""
+Use the sidebar to navigate between pages:
+- **Top Nutritionists**: Your initial Top Nutritionists Dashboard
+- **Active Members**: Active Members' BMI Change and Workout Frequency Analysis\n
+""")
+
 st.subheader("Meet the Team")
 team_members = {
     "Adithya": {
@@ -32,12 +39,6 @@ team_members = {
     },
 }
 
-# Title
-st.title("The EZ Training Dashboard Team")
-
-# Display team members
-st.markdown("### Created by the following students:")
-
 # Display team members in a horizontal layout
 cols = st.columns(len(team_members))
 
@@ -54,9 +55,3 @@ for i, (name, details) in enumerate(team_members.items()):
             """,
             unsafe_allow_html=True,
         )
-
-st.markdown("""
-Use the sidebar to navigate between pages:
-- **Top Nutritionists**: Your initial Top Nutritionists Dashboard
-- **Active Members**: Active Members' BMI Change and Workout Frequency Analysis
-""")
