@@ -3,12 +3,22 @@ import streamlit as st
 st.set_page_config(page_title="Home", layout="wide")
 
 st.title("EZ Training Dashboard") 
-st.subheader("Welcome to the EZ Training Dashboard!")
-
 st.markdown("""
-Use the sidebar to navigate between pages:
-- **Top Nutritionists**: Your initial Top Nutritionists Dashboard
-- **Active Members**: Active Members' BMI Change and Workout Frequency Analysis\n
+### Overview
+Welcome to the **EZ Training Dashboard**! This platform provides a comprehensive interface for analyzing and optimizing nutritionist and member performance metrics, empowering you to make data-driven decisions with ease.
+
+### What You’ll Find Here
+- **Top Nutritionists Dashboard**: Discover the top-performing nutritionists based on metrics like client health improvement and engagement.
+- **Active Members Analysis**: Dive into detailed analytics on active members, including BMI trends, workout frequency, and overall progress.
+- **Team Insights**: Meet the team behind this project, explore their profiles, and connect with them via LinkedIn.
+
+### Features
+- **Interactive Visualizations**: Easily filter and visualize data to uncover actionable insights.
+- **Data Exploration Tools**: Gain deep insights into member health trends and nutritionist performance.
+- **Customizable Filters**: Tailor your analysis with date ranges, performance metrics, and more.
+
+### Contribute or Learn More
+The source code for this project is available on [GitHub](https://github.com/notadithyabhat/Dashboard). Feel free to explore, contribute, or adapt the code for your own projects.
 """)
 
 st.subheader("Meet the Team")
