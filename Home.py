@@ -38,27 +38,25 @@ st.title("The EZ Training Dashboard Team")
 # Display team members
 st.markdown("### Created by the following students:")
 
-# Use Flexbox to display team members side by side
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
-    """,
-    unsafe_allow_html=True,
-)
-
+team_html = """
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 30px;">
+"""
 for name, details in team_members.items():
-    st.markdown(
-        f"""
-        <div style="text-align: center; width: 120px;">
-            <a href="{details['link']}" target="_blank" style="text-decoration: none;">
-                <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
-                <div style="font-size: 16px; font-weight: bold; color: white;">{name}</div>
-            </a>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    
+    team_html += f"""
+    <div style="text-align: center;">
+        <a href="{details['link']}" target="_blank" style="text-decoration: none;">
+            <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
+            <div style="font-size: 16px; font-weight: bold; color: black;">{name}</div>
+        </a>
+    </div>
+    """
+
+team_html += "</div>"
+
+# Render the HTML
+st.markdown(team_html, unsafe_allow_html=True)
+
+# Instructions for the sidebar
 st.markdown("""
 Use the sidebar to navigate between pages:
 - **Top Nutritionists**: Your initial Top Nutritionists Dashboard
