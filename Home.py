@@ -48,7 +48,7 @@ for i, (name, details) in enumerate(team_members.items()):
             <div style="text-align: center;">
                 <a href="{details['link']}" target="_blank" style="text-decoration: none;">
                     <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
-                    <div style="font-size: 16px; font-weight: bold; color: #000;">{name}</div>
+                    <div style="font-size: 16px; font-weight: bold; color: white;">{name}</div>
                 </a>
             </div>
             """,
