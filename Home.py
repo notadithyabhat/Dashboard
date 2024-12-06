@@ -18,6 +18,9 @@ Welcome to the **EZ Training Dashboard**! This platform provides a comprehensive
 
 ### Contribute or Learn More
 The source code for this project is available on [GitHub](https://github.com/notadithyabhat/Dashboard). Feel free to explore, contribute, or adapt the code for your own projects.
+            
+---
+            
 """)
 
 st.subheader("Meet the Team")
@@ -51,9 +54,6 @@ team_members = {
 
 # Display team members in a horizontal layout
 cols = st.columns(len(team_members))
-
-# Add a divider before the team members
-st.write("---")
 
 for i, (name, details) in enumerate(team_members.items()):
     with cols[i]:
