@@ -23,7 +23,7 @@ Welcome to the **EZ Training Dashboard**! This platform provides a comprehensive
 
 
 ### Contribute or Learn More
-The source code for this project is available on [GitHub](https://github.com/notadithyabhat/Dashboard). Feel free to explore, contribute, or adapt the code for your own projects.
+The source code for this project is available on [GitHub](https://github.com/notadithyabhat/ez-training-dashboard). Feel free to explore, contribute, or adapt the code for your own projects.
             
 ---
             
