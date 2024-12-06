@@ -1,14 +1,9 @@
 import streamlit as st
 import pandas as pd
-import sqlalchemy
 from sqlalchemy import create_engine, text
-from datetime import datetime, timedelta
-import os
-from dotenv import load_dotenv
 import altair as alt  # for richer visualizations
 
 # Load environment variables from .env file (if using)
-load_dotenv()
 
 # ------------------------------
 # Database Connection
@@ -17,11 +12,11 @@ load_dotenv()
 # Create the database engine and test connection
 try:
     # Aiven server credentials
-    DB_USER = os.getenv("DB_USER", "avnadmin")
-    DB_PASS = os.getenv("DB_PASS", "AVNS_SLETp6oSeDZPw-xBibq")
-    DB_HOST = os.getenv("DB_HOST", "mysql-3ca3af72-ez-training.g.aivencloud.com")
-    DB_PORT = os.getenv("DB_PORT", "20975")
-    DB_NAME = os.getenv("DB_NAME", "ieor215_project")
+    DB_USER = st.secrets["database"]["DB_USER"]
+    DB_PASS = st.secrets["database"]["DB_PASS"]
+    DB_HOST = st.secrets["database"]["DB_HOST"]
+    DB_PORT = st.secrets["database"]["DB_PORT"]
+    DB_NAME = st.secrets["database"]["DB_NAME"]
     SSL_CA_PATH = "ca.pem"  # Update this to the actual path of the CA certificate
 
     # Create the database engine with SSL enabled
