@@ -38,7 +38,14 @@ st.title("The EZ Training Dashboard Team")
 # Display team members
 st.markdown("### Created by the following students:")
 
-# Render members in a grid format
+# Use Flexbox to display team members side by side
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+    """,
+    unsafe_allow_html=True,
+)
+
 for name, details in team_members.items():
     st.markdown(
         f"""
@@ -51,6 +58,7 @@ for name, details in team_members.items():
         """,
         unsafe_allow_html=True,
     )
+    
 st.markdown("""
 Use the sidebar to navigate between pages:
 - **Top Nutritionists**: Your initial Top Nutritionists Dashboard
