@@ -52,7 +52,7 @@ for name, details in team_members.items():
         unsafe_allow_html=True,
     )
 for name, info in team_members.items():
-    st.write(f"[![{name}](https://media-exp1.licdn.com/dms/image/{info['img']} )]({info['link']})")
+    st.write(f"<a href='{info['link']}' target='_blank' style='text-decoration: none; color: white;'>![{name}](https://media-exp1.licdn.com/dms/image/{info['img']} )</a>", unsafe_allow_html=True)
 st.markdown("""
 Use the sidebar to navigate between pages:
 - **Top Nutritionists**: Your initial Top Nutritionists Dashboard
