@@ -45,14 +45,12 @@ for name, details in team_members.items():
         <div style="text-align: center; margin-bottom: 30px;">
             <a href="{details['link']}" target="_blank" style="text-decoration: none;">
                 <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
-                <div style="font-size: 16px; font-weight: bold; color: #333;">{name}</div>
+                <div style="font-size: 16px; font-weight: bold; color: white;">{name}</div>
             </a>
         </div>
         """,
         unsafe_allow_html=True,
     )
-for name, info in team_members.items():
-    st.write(f"<a href='{info['link']}' target='_blank' style='text-decoration: none; color: white;'>![{name}](https://media-exp1.licdn.com/dms/image/{info['img']} )</a>", unsafe_allow_html=True)
 st.markdown("""
 Use the sidebar to navigate between pages:
 - **Top Nutritionists**: Your initial Top Nutritionists Dashboard
