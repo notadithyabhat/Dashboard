@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine, text
-from datetime import datetime, timedelta
+import tempfile
 
 # Load environment variables from .env file (if using)
 
@@ -17,8 +17,12 @@ try:
     DB_HOST = st.secrets["database"]["DB_HOST"]
     DB_PORT = st.secrets["database"]["DB_PORT"]
     DB_NAME = st.secrets["database"]["DB_NAME"]
-    SSL_CA_PATH = "ca.pem"  # Update this to the actual path of the CA certificate
-    # Create the database engine with SSL enabled
+    ssl_ca = st.secrets["database"]["SSL_CA"]
+
+    # Create a temporary file for the SSL certificate
+    with tempfile.NamedTemporaryFile(delete=False, suffix='.pem') as temp_file:
+        temp_file.write(ssl_ca.encode('utf-8'))  # Write the certificate content
+        SSL_CA_PATH = temp_file.name  # Save the temporary file path
     engine = create_engine(
         f"mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}?ssl_ca={SSL_CA_PATH}"
     )
