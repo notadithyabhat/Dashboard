@@ -6,14 +6,51 @@ st.title("EZ Training Dashboard")
 st.subheader("Welcome to the EZ Training Dashboard!")
 st.subheader("Meet the Team")
 team_members = {
-    "Adithya": {"link": "https://www.linkedin.com/in/adithyabhat7/", "img": "https://media.licdn.com/dms/image/v2/D5603AQHviNaGneFvdQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721661966979?e=1738800000&v=beta&t=RohJzfJTevRshMEOxmyV_RpZWp---2esIbmz1dTcUcY"},
-    "Emily": {"link": "https://www.linkedin.com/in/emily-qiqiu/", "img": "https://media-exp1.licdn.com/dms/image/C4D03AQG7h2QYVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
-    "Zhao": {"link": "https://www.linkedin.com/in/shiyunyang-zhao/", "img": "https://media-exp1.licdn.com/dms/image/C4E03AQEJm3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
-    "Gerson": {"link": "https://www.linkedin.com/in/gersonmoralesd/", "img": "https://media-exp1.licdn.com/dms/image/C4E03AQGZd3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
-    "Chloe": {"link": "https://www.linkedin.com/in/chuyun-deng-3308b8327/", "img": "https://media-exp1.licdn.com/dms/image/C4D03AQH7U8dW7XpD9g/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"},
-    "Naga": {"link": "https://www.linkedin.com/in/vyjayanthipolapragada/", "img": "https://media-exp1.licdn.com/dms/image/C5603AQFzV3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p"}
+    "Adithya": {
+        "link": "https://www.linkedin.com/in/adithyabhat7/",
+        "img": "https://media.licdn.com/dms/image/v2/D5603AQHviNaGneFvdQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721661966979?e=1738800000&v=beta&t=RohJzfJTevRshMEOxmyV_RpZWp---2esIbmz1dTcUcY",
+    },
+    "Emily": {
+        "link": "https://www.linkedin.com/in/emily-qiqiu/",
+        "img": "https://media-exp1.licdn.com/dms/image/C4D03AQG7h2QYVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+    },
+    "Zhao": {
+        "link": "https://www.linkedin.com/in/shiyunyang-zhao/",
+        "img": "https://media-exp1.licdn.com/dms/image/C4E03AQEJm3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+    },
+    "Gerson": {
+        "link": "https://www.linkedin.com/in/gersonmoralesd/",
+        "img": "https://media-exp1.licdn.com/dms/image/C4E03AQGZd3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+    },
+    "Chloe": {
+        "link": "https://www.linkedin.com/in/chuyun-deng-3308b8327/",
+        "img": "https://media-exp1.licdn.com/dms/image/C4D03AQH7U8dW7XpD9g/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+    },
+    "Naga": {
+        "link": "https://www.linkedin.com/in/vyjayanthipolapragada/",
+        "img": "https://media-exp1.licdn.com/dms/image/C5603AQFzV3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+    },
 }
-st.write("The EZ Training Dashboard was created by the following students:")
+
+# Title
+st.title("The EZ Training Dashboard Team")
+
+# Display team members
+st.markdown("### Created by the following students:")
+
+# Render members in a grid format
+for name, details in team_members.items():
+    st.markdown(
+        f"""
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="{details['link']}" target="_blank" style="text-decoration: none;">
+                <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
+                <div style="font-size: 16px; font-weight: bold; color: #333;">{name}</div>
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 for name, info in team_members.items():
     st.write(f"[![{name}](https://media-exp1.licdn.com/dms/image/{info['img']} )]({info['link']})")
 st.markdown("""
