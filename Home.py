@@ -35,33 +35,27 @@ team_members = {
 # Title
 st.title("The EZ Training Dashboard Team")
 
-# Display instructions about the dashboard
+# Display team members
 st.markdown("### Created by the following students:")
 
-# HTML for team members in a horizontal row
-team_html = """
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
-"""
+# Display team members in a horizontal layout
+cols = st.columns(len(team_members))
 
-# Loop through team members and add their information to the HTML
-for name, details in team_members.items():
-    team_html += f"""
-    <div style="text-align: center;">
-        <a href="{details['link']}" target="_blank" style="text-decoration: none;">
-            <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
-            <div style="font-size: 16px; font-weight: bold; color: black;">{name}</div>
-        </a>
-    </div>
-    """
+for i, (name, details) in enumerate(team_members.items()):
+    with cols[i]:
+        st.markdown(
+            f"""
+            <div style="text-align: center;">
+                <a href="{details['link']}" target="_blank" style="text-decoration: none;">
+                    <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
+                    <div style="font-size: 16px; font-weight: bold; color: #000;">{name}</div>
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
-# Close the div
-team_html += "</div>"
-
-# Render the team members HTML
-st.markdown(team_html, unsafe_allow_html=True)
-
-# Display the sidebar instructions
-st.sidebar.markdown("""
+st.markdown("""
 Use the sidebar to navigate between pages:
 - **Top Nutritionists**: Your initial Top Nutritionists Dashboard
 - **Active Members**: Active Members' BMI Change and Workout Frequency Analysis
