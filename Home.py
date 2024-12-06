@@ -39,10 +39,12 @@ st.title("The EZ Training Dashboard Team")
 st.markdown("### Created by the following students:")
 
 # Render members in a grid format
-for name, details in team_members.items():
+for i, (name, details) in enumerate(team_members.items()):
+    if i % 3 == 0:
+        st.write("<div style='display: flex; flex-wrap: wrap; justify-content: center;'>")
     st.markdown(
         f"""
-        <div style="text-align: center; margin-bottom: 30px;">
+        <div style="text-align: center; margin: 10px; flex-grow: 1; flex-basis: 300px;">
             <a href="{details['link']}" target="_blank" style="text-decoration: none;">
                 <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
                 <div style="font-size: 16px; font-weight: bold; color: white;">{name}</div>
@@ -51,6 +53,9 @@ for name, details in team_members.items():
         """,
         unsafe_allow_html=True,
     )
+    if (i + 1) % 3 == 0:
+        st.write("</div>")
+
 st.markdown("""
 Use the sidebar to navigate between pages:
 - **Top Nutritionists**: Your initial Top Nutritionists Dashboard
