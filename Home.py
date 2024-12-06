@@ -16,6 +16,12 @@ Welcome to the **EZ Training Dashboard**! This platform provides a comprehensive
 - **Data Exploration Tools**: Gain deep insights into member health trends and nutritionist performance.
 - **Customizable Filters**: Tailor your analysis with date ranges, performance metrics, and more.
 
+### Setup Details
+- **Database**: The data is hosted on Aiven, ensuring reliable and scalable database management.
+- **GitHub**: The codebase is hosted on GitHub for easy collaboration and version control.
+- **Streamlit App Deployment**: The dashboard is deployed on Streamlit's free tier, allowing for seamless access and interaction. Secret keys and other sensitive data are stored in streamlit's secure environment.
+
+
 ### Contribute or Learn More
 The source code for this project is available on [GitHub](https://github.com/notadithyabhat/Dashboard). Feel free to explore, contribute, or adapt the code for your own projects.
             
