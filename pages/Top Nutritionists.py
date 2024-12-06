@@ -11,6 +11,8 @@ import tempfile
 # Database Connection
 # ------------------------------
 
+st.set_page_config(page_title="Top Nutritionists", layout="wide")
+
 # Create the database engine and test connection
 try:
     # Aiven server credentials

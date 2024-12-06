@@ -11,6 +11,10 @@ import altair as alt  # for richer visualizations
 # ------------------------------
 
 # Create the database engine and test connection
+
+st.set_page_config(page_title="Active Members", layout="wide")
+
+
 try:
     # Aiven server credentials
     DB_USER = st.secrets["database"]["DB_USER"]
