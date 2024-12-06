@@ -12,23 +12,23 @@ team_members = {
     },
     "Emily": {
         "link": "https://www.linkedin.com/in/emily-qiqiu/",
-        "img": "https://media-exp1.licdn.com/dms/image/C4D03AQG7h2QYVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+        "img": "https://media.licdn.com/dms/image/v2/D4E35AQGL-1KAhdGZyQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1727676128812?e=1734134400&v=beta&t=ZM5VQfLvoFypDhdexTcfPRjHO2OfrRbEN8n7mNlO2Us",
     },
     "Zhao": {
         "link": "https://www.linkedin.com/in/shiyunyang-zhao/",
-        "img": "https://media-exp1.licdn.com/dms/image/C4E03AQEJm3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+        "img": "https://media.licdn.com/dms/image/v2/D4E03AQFMksr8e5y82Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724223257047?e=1738800000&v=beta&t=VZ8_fsg9OmpinZkcz6e83XblDBoB7vyC9m-ncmIEmSM",
     },
     "Gerson": {
         "link": "https://www.linkedin.com/in/gersonmoralesd/",
-        "img": "https://media-exp1.licdn.com/dms/image/C4E03AQGZd3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+        "img": "https://media.licdn.com/dms/image/v2/D5603AQE7HFAXtVloyw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727666744477?e=1738800000&v=beta&t=Kz-DfWpteYKd5uEp3xgpbzPNCgK9PrucNEMKAbrjYjc",
     },
     "Chloe": {
         "link": "https://www.linkedin.com/in/chuyun-deng-3308b8327/",
-        "img": "https://media-exp1.licdn.com/dms/image/C4D03AQH7U8dW7XpD9g/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+        "img": "https://media.licdn.com/dms/image/v2/D4D03AQHMLYiksaKOtw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725584177775?e=1738800000&v=beta&t=z10YpJocU-VAwF4_7PK_Nkfd8Bwdm0dWIU-jqVpd8q0",
     },
     "Naga": {
         "link": "https://www.linkedin.com/in/vyjayanthipolapragada/",
-        "img": "https://media-exp1.licdn.com/dms/image/C5603AQFzV3HkVbQq5A/profile-displayphoto-shrink_200_200/0/1622164444951?e=1638403200&v=beta&t=Qb0q1zG0Gv3qQrF6C7qJyOQv8h6rRcFqYbZmCm6F_8p",
+        "img": "https://media.licdn.com/dms/image/v2/D5603AQEKKNZDDtM-hA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714224906696?e=1738800000&v=beta&t=DWZ19-h5QQ5MoNgRkij-VhrMW2Ku_v03aTRUL4GW4ro",
     },
 }
 
