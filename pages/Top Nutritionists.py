@@ -154,6 +154,14 @@ def get_avg_bmi_trend(start_date=None, end_date=None):
 
 st.title("🏆 Top Nutritionists Dashboard")
 
+st.markdown("""
+**Explanation**:
+This enhanced dashboard uses the `Nutritionist_Performance` table to focus on:
+- **Active_Client_Count**: The number of active clients a nutritionist has.
+- **Total_Client_Count**: The total number of clients a nutritionist has.
+- **Total_Health_Improvement**: The total health improvement score for the nutritionist.
+""")
+
 # Sidebar filters
 st.sidebar.header("🔍 Filters")
 

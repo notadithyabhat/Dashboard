@@ -96,7 +96,18 @@ apply_filters = st.sidebar.button("Apply Filters")
 reset_filters = st.sidebar.button("Reset Filters")
 
 if reset_filters:
-    st.experimental_rerun()
+    st.rerun()
+
+st.markdown("""
+**Explanation**:
+This enhanced dashboard uses the `Active_Member_BMI_Workout_View` to focus on:
+- **Average_BMI**: Gives an idea of the member's BMI trend.
+- **BMI_Change**: How much their BMI has changed over recorded measurements.
+- **Workout_Session_Count**: How many sessions they've attended.
+- **BMI_Change_Per_Session**: Efficiency metric indicating how much BMI changes per workout session.
+
+The filters allow for a detailed investigation of specific subgroups of members, and the visualizations offer additional perspectives on the data.
+""")
 
 if apply_filters:
     # Apply filters to the df
@@ -141,15 +152,4 @@ if apply_filters:
     else:
         st.warning("No members match the selected filters.")
 else:
-    st.write("Use the sidebar to set filters and click 'Apply Filters' to view the data.")
-
-st.markdown("""
-**Explanation**:
-This enhanced dashboard uses the `Active_Member_BMI_Workout_View` to focus on:
-- **Average_BMI**: Gives an idea of the member's BMI trend.
-- **BMI_Change**: How much their BMI has changed over recorded measurements.
-- **Workout_Session_Count**: How many sessions they've attended.
-- **BMI_Change_Per_Session**: Efficiency metric indicating how much BMI changes per workout session.
-
-The filters allow for a detailed investigation of specific subgroups of members, and the visualizations offer additional perspectives on the data.
-""")
+    st.write("🛠️ **Adjust the filters and click 'Apply Filters' to view the data.**")

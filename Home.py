@@ -1,7 +1,79 @@
 import streamlit as st
 
+# Set page configuration
 st.set_page_config(page_title="Home", layout="wide")
 
+# Custom CSS for styling
+st.markdown(
+    """
+    <style>
+    /* Container for the team members */
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Individual team member card */
+    .team-card {
+        background-color: var(--card-background);
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        width: 200px;
+    }
+
+    /* Hover effect for the card */
+    .team-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Team member image */
+    .team-card img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    /* Team member name */
+    .team-card .name {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--text-color);
+        margin-bottom: 10px;
+    }
+
+    /* Team member link */
+    .team-card a {
+        text-decoration: none;
+    }
+
+    /* Adjustments for dark and light themes */
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --card-background: #2c2c2c;
+            --text-color: #ffffff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --card-background: #ffffff;
+            --text-color: #000000;
+        }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Title and Overview
 st.title("EZ Training Dashboard") 
 st.markdown("""
 ### Overview
@@ -19,17 +91,17 @@ Welcome to the **EZ Training Dashboard**! This platform provides a comprehensive
 ### Setup Details
 - **Database**: The data is hosted on Aiven, ensuring reliable and scalable database management.
 - **GitHub**: The codebase is hosted on GitHub for easy collaboration and version control.
-- **Streamlit App Deployment**: The dashboard is deployed on Streamlit's free tier, allowing for seamless access and interaction. Secret keys and other sensitive data are stored in streamlit's secure environment.
-
+- **Streamlit App Deployment**: The dashboard is deployed on Streamlit's free tier, allowing for seamless access and interaction. Secret keys and other sensitive data are stored in Streamlit's secure environment.
 
 ### Contribute or Learn More
 The source code for this project is available on [GitHub](https://github.com/notadithyabhat/ez-training-dashboard). Feel free to explore, contribute, or adapt the code for your own projects.
-            
+
 ---
-            
 """)
 
+# Subheader for Team Members
 st.subheader("Meet the Team")
+
 team_members = {
     "Adithya": {
         "link": "https://www.linkedin.com/in/adithyabhat7/",
@@ -68,7 +140,7 @@ for i, (name, details) in enumerate(team_members.items()):
             <div style="text-align: center;">
                 <a href="{details['link']}" target="_blank" style="text-decoration: none;">
                     <img src="{details['img']}" alt="{name}" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px;" />
-                    <div style="font-size: 16px; font-weight: bold; color: white;">{name}</div>
+                    <div style="font-size: 16px; font-weight: bold; color: grey;">{name}</div>
                 </a>
             </div>
             """,
