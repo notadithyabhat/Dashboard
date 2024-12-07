@@ -258,7 +258,7 @@ apply_filters = st.sidebar.button("✅ Apply Filters")
 reset_filters = st.sidebar.button("🔄 Reset Filters")
 
 if reset_filters:
-    st.experimental_rerun()
+    st.rerun()
 
 if apply_filters:
     nutritionist_data = get_nutritionist_performance(
