@@ -76,9 +76,3 @@ if uploaded_file:
         st.bar_chart(allocation_summary)
     else:
         st.error("No optimal solution found.")
-
-# Add a footer with the GitHub link
-st.markdown("""
----
-Explore the code on [GitHub](https://github.com/your-repo-link-here).
-""")
